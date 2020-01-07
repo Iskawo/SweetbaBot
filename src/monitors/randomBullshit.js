@@ -15,9 +15,9 @@ module.exports = class extends Monitor {
         if (msg.command) return;
         if (msg.channel.id === '663921123121168384') return;
         let i = Math.floor((Math.random() * shit.length));
-        let randomNum = util.random(0, 8);
+        let randomNum = util.random(0, 15);
         if (randomNum == 5) {
-          msg.send(shit[i]);
+          msg.send(shit[i].replace('%u', msg.author.username));
         }
     }
 };
