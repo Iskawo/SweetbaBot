@@ -1,0 +1,22 @@
+### node
+node_modules
+node_modules/*
+
+### other
+*.log
+.idea
+data/env.js
+*.env
+### provider 
+src/bwd
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history

@@ -1,0 +1,29 @@
+{
+  "name": "sweetbabot",
+  "version": "1.0.0",
+  "description": "shitpost lsdgbudofg bot",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "node .",
+    "lint": "eslint . --fix",
+    "start": "cross-env NODE_ENV=production node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Iskawo/SweetbaBot"
+  },
+  "author": "Iskawo",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^6.0.3",
+    "discord-md-tags": "0.0.6",
+    "discord.js": "github:discordjs/discord.js#master",
+    "dotenv": "^8.2.0",
+    "klasa": "github:dirigeants/klasa#settings",
+    "klasa-member-gateway": "github:dirigeants/klasa-member-gateway#settings",
+    "ms": "^2.1.2"
+  }
+}
