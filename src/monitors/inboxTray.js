@@ -12,7 +12,7 @@ module.exports = class extends Monitor {
     async run(msg) {
         if (msg.content === '📥') {
           await msg.react('📥');
-          return msg.send('📥').then(m => m.react('📥'));
+          return msg.send('📥');
         }
     }
 };
