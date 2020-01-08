@@ -10,7 +10,7 @@ module.exports = class extends Event {
       this.client.user.setPresence({
         status: 'online',
         activity: {
-          name: 'daddy',
+          name: 'daddy 🤤',
           type: 'WATCHING'
         }
      });
