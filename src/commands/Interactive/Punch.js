@@ -1,5 +1,5 @@
 const { Command } = require('klasa');
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, MessageAttachment } = require('discord.js');
 const { punch: gifs } = require('../../../lib/util/constants');
 module.exports = class extends Command {
 
@@ -20,6 +20,7 @@ module.exports = class extends Command {
 
     async run(message, [user]) {
         let randomgif = Math.floor((Math.random() * gifs.length));
-        return message.channel.sendFile(gifs[randomgif], 'fucking_w0t_m8.png', `${message.author} jus smacked the shit out of ${user}`)
+        let attachment = new MessageAttachment(gifs[randomgif]);
+        return message.channel.send(`${message.author} jus smacked the shit out of ${user}`, attachment);
     }
 };
