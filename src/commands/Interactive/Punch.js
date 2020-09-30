@@ -15,12 +15,12 @@ module.exports = class extends Command {
             cooldownLevel: 'author',
             usageDelim: ' ',
         });
-        this.customizeResponse('user', 'are u actually ok? a user is required')
+        this.customizeResponse('user', 'are you actually okay? A user is required')
     }
 
     async run(message, [user]) {
         let randomgif = Math.floor((Math.random() * gifs.length));
         let attachment = new MessageAttachment(gifs[randomgif]);
-        return message.channel.send(`${message.author} jus smacked the shit out of ${user}`, attachment);
+        return message.channel.send(`${message.author} just smacked the living shit out of ${user}`, attachment);
     }
 };
